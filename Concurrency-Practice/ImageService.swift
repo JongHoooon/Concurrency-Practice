@@ -36,7 +36,9 @@ final class ImageService {
             
             if let data = Data {
                 image = UIImage(data: data) ?? UIImage(systemName: "photo")!
-                completion(image)
+                DispatchQueue.main.async {
+                    completion(image)                    
+                }
             }
         }
         .resume()
