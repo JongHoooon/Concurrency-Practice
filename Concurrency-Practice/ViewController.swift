@@ -63,30 +63,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tapLoadAll(_ sender: Any) {
-        [
+        let imageViews = [
             imageView0, imageView1,
             imageView2, imageView3,
             imageView4
-        ].forEach { $0?.image = UIImage(systemName: "photo")}
-        
-        ImageService.shared.load(num: 0) { [weak self] image in
-                self?.imageView0.image = image
-        }
-        
-        ImageService.shared.load(num: 1) { [weak self] image in
-                self?.imageView1.image = image
-        }
-        
-        ImageService.shared.load(num: 2) { [weak self] image in
-                self?.imageView2.image = image
-        }
-        
-        ImageService.shared.load(num: 3) { [weak self] image in
-                self?.imageView3.image = image
-        }
-        
-        ImageService.shared.load(num: 4) { [weak self] image in
-                self?.imageView4.image = image
+        ]
+            
+        for (i, imageView) in imageViews.enumerated() {
+            imageView?.image = UIImage(systemName: "photo")
+            ImageService.shared.load(num: i, completion: { image in
+                imageView?.image = image
+            })
         }
     }
 }
