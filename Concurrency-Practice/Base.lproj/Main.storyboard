@@ -41,6 +41,9 @@
                                                     </backgroundConfiguration>
                                                     <color key="baseForegroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapLoad1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PmI-es-4YX"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -66,6 +69,9 @@
                                                     </backgroundConfiguration>
                                                     <color key="baseForegroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapLoad2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tat-4e-t5D"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -91,6 +97,9 @@
                                                     </backgroundConfiguration>
                                                     <color key="baseForegroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapLoad3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WoU-i4-g1a"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -116,6 +125,9 @@
                                                     </backgroundConfiguration>
                                                     <color key="baseForegroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapLoad4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g6a-5U-H9E"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -141,6 +153,9 @@
                                                     </backgroundConfiguration>
                                                     <color key="baseForegroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tapLoad5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="orN-Qb-ga8"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -150,6 +165,9 @@
                                 <rect key="frame" x="18" y="603" width="356" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Load All Images"/>
+                                <connections>
+                                    <action selector="tapLoadAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2B9-ve-OCE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -163,6 +181,19 @@
                             <constraint firstItem="sbZ-aq-H8x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="rl6-Jy-pR6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView1" destination="S7C-NQ-YaA" id="dtM-jm-LjJ"/>
+                        <outlet property="imageView2" destination="pOn-OL-ICh" id="H6D-DR-BlQ"/>
+                        <outlet property="imageView3" destination="aTL-u8-p0M" id="sv5-dx-tNr"/>
+                        <outlet property="imageView4" destination="T3O-Go-kCx" id="wLm-aS-P8v"/>
+                        <outlet property="imageView5" destination="1EV-K3-3gr" id="wIV-K5-OaN"/>
+                        <outlet property="loadAllButton" destination="lpq-XF-Lka" id="XJA-hc-04G"/>
+                        <outlet property="loadButton1" destination="Emv-Os-aU3" id="fqB-ZA-EoL"/>
+                        <outlet property="loadButton2" destination="H0U-Hg-ndT" id="JAz-FZ-LRD"/>
+                        <outlet property="loadButton3" destination="gEm-lc-v6z" id="SJs-Hv-b3G"/>
+                        <outlet property="loadButton4" destination="WWM-Qy-gyN" id="9xQ-Vj-vXF"/>
+                        <outlet property="loadButton5" destination="yJG-Bk-8EV" id="wMd-vc-yUD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
