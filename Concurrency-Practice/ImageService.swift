@@ -7,9 +7,6 @@
 
 import UIKit
 
-
-
-
 let base = "https://user-images.githubusercontent.com/98168685/"
 
 let images = [
@@ -33,7 +30,6 @@ final class ImageService {
             if let error = error {
                 print("✨Error: \(error)")
             }
-            
             if let data = Data {
                 image = UIImage(data: data) ?? UIImage(systemName: "photo")!
                 DispatchQueue.main.async {

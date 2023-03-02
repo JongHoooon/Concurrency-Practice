@@ -22,14 +22,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var loadButton5: UIButton!
     @IBOutlet weak var loadAllButton: UIButton!
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-    
     
     @IBAction func tapLoad1(_ sender: Any) {
         imageView1.image = UIImage(systemName: "photo")
@@ -73,7 +69,6 @@ class ViewController: UIViewController {
             imageView3, imageView4,
             imageView5
         ].forEach { $0?.image = UIImage(systemName: "photo")}
-        
         
         ImageService.shared.load(num: 0) { [weak self] image in
                 self?.imageView1.image = image
